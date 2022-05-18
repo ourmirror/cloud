@@ -46,6 +46,7 @@ jobs:
         
       - name: docker build
         run: |
+            cd Docker
             docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/mirror:latest .
             docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/mirror:django_v$GITHUB_RUN_NUMBER .
             docker images
