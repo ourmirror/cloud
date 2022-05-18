@@ -60,6 +60,6 @@ jobs:
           
       - name: docker push
         run: |
-              docker push -t ${{ secrets.DOCKERHUB_USERNAME }}/mirror:latest .
-              docker push -t ${{ secrets.DOCKERHUB_USERNAME }}/mirror:django_v$GITHUB_RUN_NUMBER .
+              docker push  ${{ secrets.DOCKERHUB_USERNAME }}/mirror:latest .
+              docker push  ${{ secrets.DOCKERHUB_USERNAME }}/mirror:django_v$GITHUB_RUN_NUMBER .
               
