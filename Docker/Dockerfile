@@ -9,6 +9,6 @@ COPY . .
 
 WORKDIR ./django-web
 
-CMD ["python3", "manage.py", "runserver", "web.t-seonghun.net:8000"]
+CMD ["python3", "manage.py", "runserver", "0:8000"]
 
 EXPOSE 8000
